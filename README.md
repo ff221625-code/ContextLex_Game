@@ -1,6 +1,6 @@
-# ContextLex – The Word Meaning Challenge
+# 🎮🎯ContextLex – The Word Meaning Challenge Game 
 
-Explore Words. Discover Meanings. Understand Context.
+## Explore Words. Discover Meanings. Understand Context.
 
 ContextLex is an interactive, context-aware Natural Language Processing (NLP) web application designed to make language learning engaging. It helps users understand how the meaning of a word changes depending on the context in which it is used.
 
@@ -8,7 +8,7 @@ The application combines interactive word challenges with NLP techniques such as
 
 ---
 
-## Features
+## ✨Features
 
 1. Word Meaning Quiz
 
@@ -42,7 +42,7 @@ The application combines interactive word challenges with NLP techniques such as
 
 ---
 
-## Technologies Used
+## 🛠️Technologies Used
 
 Technology| Purpose
 Python| Backend programming
@@ -57,9 +57,9 @@ Render| Web application deployment
 
 ---
 
-## Project Structure
+## 💾Project Structure
 
-``
+```
 ContextLex_Game/
 │
 ├── app.py
@@ -75,13 +75,13 @@ ContextLex_Game/
 │   └── script.js
 │
 └── wsd_dataset.csv
-``
+```
 
 Note: "wsd_dataset.csv" is a private dataset. It is excluded from the public GitHub repository and configured separately on Render using Secret Files.
 
 ---
 
-## Installation and Setup
+## ⚙️Installation and Setup
 
 Follow these steps to run ContextLex on your computer.
 
@@ -121,7 +121,7 @@ Open the local URL displayed in your terminal to access ContextLex.
 
 ---
 
-## Deployment
+## 🔗Deployment
 
 ContextLex is deployed using Render.
 
@@ -154,7 +154,7 @@ This keeps the dataset separate from the public GitHub repository.
 
 ---
 
-## Applications
+## 📑Applications
 
 - Understanding ambiguous words in natural language.
 - Learning context-based word meanings.
@@ -164,7 +164,7 @@ This keeps the dataset separate from the public GitHub repository.
 
 ---
 
-## Future Enhancements
+## 🚀Future Enhancements
 
 - Expand the word meaning database.
 - Improve contextual word analysis.
@@ -175,7 +175,7 @@ This keeps the dataset separate from the public GitHub repository.
 
 ---
 
-## Author
+## 👩🏻‍💻Author Firdous Fathima 
 
 ContextLex – The Word Meaning Challenge
 
