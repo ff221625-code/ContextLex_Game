@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ContextLex — Word Meaning Challenge</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="confettiLayer" aria-hidden="true"></div>
+<main class="container">
+  <header class="hero"><div class="eyebrow">🧠 CONTEXT • CLUES • CHALLENGE</div><h1>Context<span>Lex</span></h1><p class="subtitle">The Word Meaning Challenge</p><p class="intro">One word can have many meanings. Use sentence clues to find the right one!</p></header>
+  <nav class="tabs"><button class="tab active" id="quizTab">🎮 Quiz Game</button><button class="tab" id="freeTab">🔎 Free Play</button></nav>
+  <section id="quizMode" class="glass panel">
+    <div class="game-top"><span class="pill" id="questionCount">Question 1 / 10</span><span>🏆 Score: <b id="score">0</b></span></div>
+    <div class="progress"><div id="progressBar"></div></div><p class="label">WHAT DOES THIS WORD MEAN IN CONTEXT?</p>
+    <h2 id="questionTitle">Loading challenge…</h2><div id="questionSentence" class="sentence"></div><div id="options" class="options"></div>
+    <p id="feedback" class="feedback" aria-live="polite"></p><div class="buttons"><button id="nextBtn" class="primary" disabled>Next Question →</button><button id="restartBtn" class="secondary">↻ Restart</button></div>
+  </section>
+  <section id="resultMode" class="glass panel hidden"><div class="big">🏆</div><p class="label">CHALLENGE COMPLETE</p><h2 id="finalTitle">Well played!</h2><p class="final-score"><span id="finalScore">0</span><small> / 10 correct</small></p><p id="finalMessage"></p><button id="playAgainBtn" class="primary">Play Again ↻</button></section>
+  <section id="freeMode" class="glass panel hidden"><p class="label">TRY YOUR OWN SENTENCE</p><h2>Explore a word's meaning</h2>
+    <label for="freeSentence">Sentence</label><textarea id="freeSentence" placeholder="Example: The crane lifted a heavy container at the construction site."></textarea>
+    <label for="targetWord">Target word (optional)</label><input id="targetWord" placeholder="Example: crane">
+    <button id="analyzeBtn" class="primary full">Analyze Context</button><div id="freeResult" class="free-result" aria-live="polite"></div>
+    <p class="note">Enter a sentence and a target word to explore how context changes meaning.</p>
+  </section>
+  <footer>ContextLex • A student NLP game project</footer>
+</main>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body></html>
